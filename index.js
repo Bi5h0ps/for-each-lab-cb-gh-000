@@ -8,3 +8,9 @@ function iterate(callback) {
 function doToArray(array,callback) {
   array.forEach(callback);
 }
+
+function iterativeLog(array) {
+  array.forEach((item,index,array) => {
+    console.log(`${index}: ${item}`);
+  }
+}
